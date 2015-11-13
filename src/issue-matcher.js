@@ -7,7 +7,9 @@ function matcher(existingIssues, issue) {
   la(check.array(existingIssues), 'expected list of issues', existingIssues);
   la(check.object(issue), 'expected new issue', issue);
 
-  var found = R.find(R.propEq('title', issue.title), existingIssues);
+  var matchTitle = R.propEq('title', issue.title);
+  var found = R.find(matchTitle, existingIssues);
+
   if (!found) {
     return Promise.reject();
   }

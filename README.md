@@ -5,6 +5,25 @@
 Github issues are downloaded and cached using
 [github-issue-proxy](https://github.com/bahmutov/github-issue-proxy).
 
+    npm install --save github-issue-matcher
+
+Then pass list of existing issues and the new issue to find the matching one
+
+```js
+var matcher = require('github-issue-matcher');
+var getIssues = require('github-issue-proxy');
+getIssues(options)
+  .then(function (existingIssues) {
+    return matcher(existingIssues, newIssue);
+  })
+  .then(function (found) {
+    // do something, like add comment
+  }, function () {
+    // could not find existing issue
+    // file new one?
+  });
+```
+
 ### Small print
 
 Author: Gleb Bahmutov &copy; 2015
