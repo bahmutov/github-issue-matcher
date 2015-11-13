@@ -1,0 +1,28 @@
+{
+  "name": "github-issue-matcher",
+  "version": "1.0.0",
+  "description": "Matching issue to existing one or creating new one",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/github-issue-matcher.git"
+  },
+  "keywords": [
+    "github",
+    "gh",
+    "issue",
+    "match",
+    "matching",
+    "matcher",
+    "utility"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/github-issue-matcher/issues"
+  },
+  "homepage": "https://github.com/bahmutov/github-issue-matcher#readme"
+}
