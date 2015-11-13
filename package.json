@@ -5,6 +5,7 @@
   "main": "src/issue-matcher.js",
   "scripts": {
     "test": "mocha src/*-spec.js",
+    "watch": "mocha src/*-spec.js --watch",
     "commit": "commit-wizard"
   },
   "repository": {
@@ -44,5 +45,11 @@
   },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
+  },
+  "dependencies": {
+    "bluebird": "3.0.5",
+    "check-more-types": "2.1.2",
+    "lazy-ass": "1.0.0",
+    "ramda": "0.18.0"
   }
 }
